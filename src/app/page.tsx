@@ -1,3 +1,5 @@
+/* eslint-disable react/no-unescaped-entities */
+
 export default function Home() {
   const sections = [
     { id: "vision", title: "Vision" },
@@ -206,13 +208,7 @@ function Section({
   );
 }
 
-function Callout({ children }: { children: React.ReactNode }) {
-  return (
-    <div className="mt-6 rounded-lg border border-amber-500/30 bg-amber-500/5 px-4 py-3 text-amber-800 dark:border-amber-400/30 dark:bg-amber-400/5 dark:text-amber-200">
-      {children}
-    </div>
-  );
-}
+// Removed unused Callout component to satisfy ESLint.
 
 function GitHubIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
